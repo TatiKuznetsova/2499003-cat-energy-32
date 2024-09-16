@@ -17,31 +17,35 @@
 
   <header class="header">
     <h1 class="visually-hidden">Интернет-магазин здорового питания для котов Cat energy</h1>
-    <nav class="header__navigation">
-      <a class="header__logo" href="index.html">
-        <picture>
-          <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-          <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с надписью Cat Energy">
-      </a>
-      <button class="header__button" type="button" aria-label="Открыть меню"></button>
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__link" href="index.html">Главная</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link  header__link--current" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Подбор продукции</a>
-        </li>
-      </ul>
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с надписью Cat Energy">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__button" type="button">
+        <span class="visually-hidden">Отрыть меню</span>
+      </button>
+      <div class="navigation__content">
+        <ul class="navigation__list menu">
+          <li class="menu__item">
+            <a class="menu__link " href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Подбор продукции</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <main class="main-catalog">
+  <main>
     <section class="products">
       <h2 class="products__title">Каталог продукции</h2>
       <ul class="products__list">
