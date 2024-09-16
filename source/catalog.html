@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Каталог продукции | Кэт энерджи</title>
+  <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,8 +18,12 @@
   <header class="header">
     <h1 class="visually-hidden">Интернет-магазин здорового питания для котов Cat energy</h1>
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="#" width="33" height="38" alt="Логотип с котом">
-      <img class="header__logo-text" src="#" width="101" height="18" alt="Логотип с надписью Cat energy">
+      <picture>
+        <source media="(min-width:1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+        <source media="(min-width:768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+        <img class="header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с надписью Cat Energy">
     </a>
     <nav class="navigation">
       <button class="navigation__button" type="button">
@@ -37,7 +45,7 @@
     </nav>
   </header>
 
-  <main class="main-catalog">
+  <main>
     <section class="products">
       <h2 class="products__title">Каталог продукции</h2>
       <ul class="products__list">
@@ -328,32 +336,30 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__logo">
-        <a class="footer__logo-text" href="#">Логотип Cat energy</a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Контакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в YouTube</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Telegram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__dev dev">
-        <a class="dev-link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
-      </div>
+    <div class="footer__content content">
+      <a class="footer__logo footer-link" href="index.html">
+        <img class="footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип с надписью Cat Energy">
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Контакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в YouTube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__dev dev" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт разработчика">
+        <span class="dev__text">HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>
